@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
 }
 
-nav{
+nav {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -16,27 +16,27 @@ nav{
     margin: 0 35px 0 35px
 }
 
-.logo{
+.logo {
     font-size: 32px;
     margin-top: 20px;
 }
 
-.logo p{
+.logo p {
     margin: 0;
 }
 
-.logo-line{
+.logo-line {
     height: 3px;
     width: 60%;
     background: cornflowerblue;
     margin: 5px 0 20px 0;
 }
 
-#menu-toggle{
+#menu-toggle {
     display: none;
 }
 
-.menu-btn{
+.menu-btn {
     display: none;
     cursor: pointer;
     flex-direction: column;
@@ -48,47 +48,71 @@ nav{
     gap: 5px;
 }
 
-.menu-btn span:nth-child(even){
+.menu-btn span:nth-child(even) {
     width: 25px;
     height: 3px;
     background: white;
 }
 
-.menu-btn span:nth-child(odd){
+.menu-btn span:nth-child(odd) {
     width: 30px;
     height: 3px;
     background: white;
 }
 
-.navbar{
+.navbar {
     display: flex;
     margin: 0;
     padding: 0;
     gap: 25px;
 }
+
 nav input[type="radio"] {
     display: none;
 }
+
 nav label {
+    position: relative;
+    text-align: center;
+    padding-bottom: 12px;
     color: #ccc;
     font-size: 24px;
     cursor: pointer;
     color: rgba(128, 128, 128, 0.8);
 }
+
 nav label:hover {
     color: white;
 }
+
 nav input[type="radio"]:checked + label {
     color: white;
 }
 
-#btn-status{
+nav input[type="radio"] + label::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 5px auto 0;
+}
+
+nav input[type="radio"]:checked + label::after {
+    background-color: #17C2EC;
+}
+
+#btn-status {
     color: #17C2EC;
     font-size: 24px;
     padding: 7px 10px;
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.8);
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
@@ -96,32 +120,31 @@ nav input[type="radio"]:checked + label {
     background-color: #17C2EC;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 
-section{
+section {
 
 }
 
 @media (max-width: 768px) {
-    .menu-btn{
+    .menu-btn {
         display: flex;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top: 70px;
-        width: 100%;
         flex-direction: column;
         display: none;
     }
 
-    #menu-toggle:checked ~ .navbar{
+    #menu-toggle:checked ~ .navbar {
         display: flex;
     }
 
 
-    #btn-status{
+    #btn-status {
         display: none;
     }
 }
