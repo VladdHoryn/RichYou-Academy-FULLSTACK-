@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: darkblue;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav{
@@ -35,11 +36,22 @@ nav{
     display: none;
     cursor: pointer;
     flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 7px;
+    border-radius: 5px;
+
     gap: 5px;
 }
 
-.menu-btn span{
-    width: 23px;
+.menu-btn span:nth-child(even){
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.menu-btn span:nth-child(odd){
+    width: 30px;
     height: 3px;
     background: white;
 }
@@ -58,6 +70,23 @@ ul li a{
     font-size: 24px;
 }
 
+#btn-status{
+    color: #17C2EC;
+    font-size: 24px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#btn-status:hover {
+    background-color: #17C2EC;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+}
+
 @media (max-width: 768px) {
     .menu-btn{
         display: flex;
@@ -74,5 +103,9 @@ ul li a{
 
     #menu-toggle:checked ~ ul{
         display: flex;
+    }
+
+    #btn-status{
+        display: none;
     }
 }
