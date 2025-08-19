@@ -2,6 +2,10 @@ body {
     margin: 0;
     background-color: darkblue;
     font-family: 'Montserrat', sans-serif;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 nav{
@@ -85,6 +89,10 @@ ul li a{
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+}
+
+section{
+
 }
 
 @media (max-width: 768px) {
