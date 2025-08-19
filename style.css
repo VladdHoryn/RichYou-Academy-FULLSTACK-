@@ -60,18 +60,26 @@ nav{
     background: white;
 }
 
-ul{
-    list-style: none;
+.navbar{
     display: flex;
     margin: 0;
     padding: 0;
     gap: 25px;
 }
-
-ul li a{
-    color: white;
-    text-decoration: none;
+nav input[type="radio"] {
+    display: none;
+}
+nav label {
+    color: #ccc;
     font-size: 24px;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.8);
+}
+nav label:hover {
+    color: white;
+}
+nav input[type="radio"]:checked + label {
+    color: white;
 }
 
 #btn-status{
@@ -99,19 +107,19 @@ section{
     .menu-btn{
         display: flex;
     }
-    ul{
+
+    .navbar{
         position: absolute;
         top: 70px;
         width: 100%;
-        /*opacity: 80%;*/
-        background: darkblue;
         flex-direction: column;
         display: none;
     }
 
-    #menu-toggle:checked ~ ul{
+    #menu-toggle:checked ~ .navbar{
         display: flex;
     }
+
 
     #btn-status{
         display: none;
