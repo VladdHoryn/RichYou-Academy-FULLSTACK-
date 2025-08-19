@@ -7,40 +7,47 @@
 </head>
 <body>
 <section>
-<nav>
-    <div class="logo">
-        <p>Vaccination.ng</p>
-        <div class="logo-line"></div>
+    <nav>
+        <div class="logo">
+            <p>Vaccination.ng</p>
+            <div class="logo-line"></div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="navbar">
+            <input type="radio" name="nav" id="home" checked>
+            <label for="home">Home</label>
+            <input type="radio" name="nav" id="about">
+            <label for="about">About</label>
+            <input type="radio" name="nav" id="services">
+            <label for="services">Services</label>
+            <input type="radio" name="nav" id="contact">
+            <label for="contact">Contact</label>
+        </div>
+
+        <btn id="btn-status">Check Status</btn>
+    </nav>
+
+    <div class="block-get-vaccine">
+        <p class="fs-medium c-blue bold">Get Vaccinated. Boost your Immune System</p>
+        <div>
+            <p class="fs-big c-white extra-bold">COVID-19 Vaccination Got Easier With,</p>
+            <p class="fs-big c-blue extra-bold">Vaccination.ng</p>
+        </div>
+        <p class="fs-medium c-white bold">Vaccination.ng will help you find the nearest centre for vaccination, in all 36 states in Nigeria.</p>
+        <div class="flex-row">
+            <btn id="btn-get-vaccine" class="fs-medium c-white bold">Get Vaccine</btn>
+            <btn id="btn-help" class="fs-medium c-white bold">Help Center</btn>
+        </div>
     </div>
-
-    <input type="checkbox" id="menu-toggle">
-
-    <label for="menu-toggle" class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-<!--    <ul>-->
-<!--        <li><a href="#">Home</a></li>-->
-<!--        <li><a href="#">Services</a></li>-->
-<!--        <li><a href="#">Schedule</a></li>-->
-<!--        <li><a href="#">Contact us</a></li>-->
-<!--    </ul>-->
-    <div class="navbar">
-        <input type="radio" name="nav" id="home" checked>
-        <label for="home">Home</label>
-        <input type="radio" name="nav" id="about">
-        <label for="about">About</label>
-        <input type="radio" name="nav" id="services">
-        <label for="services">Services</label>
-        <input type="radio" name="nav" id="contact">
-        <label for="contact">Contact</label>
-    </div>
-
-    <btn id="btn-status">Check Status</btn>
-</nav>
 </section>
 
 </body>

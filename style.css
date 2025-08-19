@@ -1,11 +1,8 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: darkblue;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("./images/background.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
 }
 
 nav {
@@ -13,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 35px 0 35px
+    margin: 0 35px 30px 35px;
 }
 
 .logo {
@@ -124,27 +121,113 @@ nav input[type="radio"]:checked + label::after {
 }
 
 section {
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
 
+.block-get-vaccine{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 600px;
+    margin-left: 35px;
+    padding: 0;
+}
+
+.block-get-vaccine p{
+    margin: 0;
+    padding: 0;
+}
+
+.fs-medium{
+    font-size: 24px;
+}
+.fs-big{
+    font-size: 48px;
+}
+
+.c-blue {
+    color: #17C2EC;
+}
+.c-white{
+    color: white;
+}
+.bold {
+    font-weight: 700;
+}
+.extra-bold{
+    font-weight: 900;
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+}
+
+#btn-get-vaccine {
+    padding: 20px 25px;
+    background-color: #17C2EC;
+    border-radius: 20px;
+}
+
+#btn-help{
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 2px solid #17C2EC;
 }
 
 @media (max-width: 768px) {
     .menu-btn {
         display: flex;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navbar {
-        position: absolute;
-        top: 70px;
         flex-direction: column;
-        display: none;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
     }
 
     #menu-toggle:checked ~ .navbar {
         display: flex;
+        max-height: 300px;
     }
-
 
     #btn-status {
         display: none;
+    }
+
+    .fs-medium{
+        font-size: 20px;
+    }
+    .fs-big{
+        font-size: 36px;
+    }
+
+    .block-get-vaccine{
+        width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fs-medium{
+        font-size: 14px;
+    }
+    .fs-big{
+        font-size: 24px;
+    }
+
+    .block-get-vaccine{
+        width: 300px;
     }
 }
