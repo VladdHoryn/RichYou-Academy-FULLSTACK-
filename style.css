@@ -5,12 +5,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+main{
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
 nav {
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 35px 30px 35px;
 }
 
 .logo {
@@ -121,10 +127,7 @@ nav input[type="radio"]:checked + label::after {
 }
 
 section {
-    background-image: url("./images/background.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    margin: 0 35px 0 35px;
 }
 
 .block-get-vaccine{
@@ -132,7 +135,6 @@ section {
     flex-direction: column;
     gap: 40px;
     width: 600px;
-    margin: 0 35px 30px 35px;
     padding: 0;
 }
 
@@ -163,7 +165,13 @@ section {
 
 .flex-row {
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+
+.widget {
+    width: 50px;
+    height: 50px;
 }
 
 #button-get-vaccine {
@@ -195,11 +203,11 @@ section {
 }
 
 .image-container {
-    width: 700px;
+    width: 620px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 35px 35px 0;
+    margin-top: 35px;
 }
 
 .main-wrapper {
@@ -216,8 +224,8 @@ section {
 
 .main-img {
     grid-area: main;
-    width: 600px;
-    height: 600px;
+    width: 530px;
+    height: 570px;
     z-index: 1;
 }
 
@@ -315,6 +323,11 @@ section {
         font-size: 36px;
     }
 
+    .widget {
+        width: 30px;
+        height: 30px;
+    }
+
     .block-get-vaccine{
         width: 500px;
     }
@@ -330,5 +343,34 @@ section {
 
     .block-get-vaccine{
         width: 300px;
+    }
+
+    .image-container {
+        width: 350px;
+    }
+
+    .main-img {
+        width: 250px;
+        height: 270px;
+    }
+
+    .left-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .right-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .bottom-block-img{
+        width: 240px;
+        height: 70px;
+    }
+
+    .employees-flex img {
+        width: 40px;
+        height: 40px;
     }
 }
