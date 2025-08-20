@@ -646,6 +646,81 @@ section {
     margin-bottom: 20px;
 }
 
+.symptoms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.symptoms-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.symptoms-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person img {
+    width: 700px;
+    height: 500px;
+    z-index: 0;
+    position: relative;
+}
+
+.symptom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0 15px;
+    height: 70px;
+    border-radius: 12px;
+}
+
+.symptom img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
+}
+
+.symptom-left.top {
+    left: 10%;
+    top: 15%;
+}
+
+.symptom-left.mid {
+    left: 5%;
+    top: 40%;
+}
+
+.symptom-left.bottom {
+    left: 0;
+    bottom: 15%;
+}
+
+.symptom-right.top {
+    right: 10%;
+    top: 15%;
+}
+
+.symptom-right.mid {
+    right: 5%;
+    top: 40%;
+}
+
+.symptom-right.bottom {
+    right: 0;
+    bottom: 15%;
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: flex;
@@ -743,6 +818,21 @@ section {
 
     .back-up-main-p-1440 {
         display: none;
+    }
+
+    .symptom img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .symptom {
+        height: 45px;
+        padding: 0 10px;
+    }
+
+    .person img {
+        width: 450px;
+        height: 350px;
     }
 }
 
@@ -842,5 +932,20 @@ section {
         height: 70px;
         top: -35px;
         left: -35px;
+    }
+
+    .symptom img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .symptom {
+        height: 20px;
+        padding: 0 5px;
+    }
+
+    .person img {
+        width: 220px;
+        height: 170px;
     }
 }
