@@ -33,7 +33,7 @@ nav {
     display: none;
 }
 
-.menu-btn {
+.menu-button {
     display: none;
     cursor: pointer;
     flex-direction: column;
@@ -45,13 +45,13 @@ nav {
     gap: 5px;
 }
 
-.menu-btn span:nth-child(even) {
+.menu-button span:nth-child(even) {
     width: 25px;
     height: 3px;
     background: white;
 }
 
-.menu-btn span:nth-child(odd) {
+.menu-button span:nth-child(odd) {
     width: 30px;
     height: 3px;
     background: white;
@@ -103,7 +103,7 @@ nav input[type="radio"]:checked + label::after {
     background-color: #17C2EC;
 }
 
-#btn-status {
+#button-status {
     color: #17C2EC;
     font-size: 24px;
     padding: 7px 10px;
@@ -113,7 +113,7 @@ nav input[type="radio"]:checked + label::after {
     cursor: pointer;
 }
 
-#btn-status:hover {
+#button-status:hover {
     background-color: #17C2EC;
     color: white;
     transform: translateY(-2px);
@@ -166,13 +166,13 @@ section {
     gap: 20px;
 }
 
-#btn-get-vaccine {
+#button-get-vaccine {
     padding: 20px 25px;
     background-color: #17C2EC;
     border-radius: 20px;
 }
 
-#btn-help{
+#button-help{
     padding: 20px 25px;
     border-radius: 20px;
     border: 2px solid #17C2EC;
@@ -263,7 +263,7 @@ section {
  }
 
 @media (max-width: 768px) {
-    .menu-btn {
+    .menu-button {
         display: flex;
         cursor: pointer;
     }
@@ -286,7 +286,7 @@ section {
         border-radius: 5px;
     }
 
-    #btn-status {
+    #button-status {
         display: none;
     }
 
