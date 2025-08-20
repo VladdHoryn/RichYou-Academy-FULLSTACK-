@@ -159,6 +159,10 @@ section {
     color: white;
 }
 
+.c-gray {
+    color: gray;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -293,6 +297,132 @@ section {
     flex-wrap: wrap;
 }
 
+.block-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.submit-item {
+    flex: 1 1 220px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.submit-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#submit-button {
+    flex: 1 1 220px;
+    background-color: #17C2EC;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#submit-button:hover {
+    background-color: #14b5dd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 40px;
+    background-color: white;
+}
+
+.banner img {
+    max-width: 20%;
+    object-fit: contain;
+}
+
+.form-block {
+    background: #111a3d;
+    padding: 15px 40px 30px 40px;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header-wrapper {
+    background: #1a2555;
+    padding: 10px 40px 5px 40px;
+
+    text-align: center;
+}
+
+.border-gray-back {
+    background: #1a2555;
+    border-radius: 12px;
+    padding: 2px 0;
+}
+
+.header-wrapper p {
+    text-align: left;
+}
+
+.input-group input {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #17C2EC;
+    background: none;
+    color: white;
+    outline: none;
+    flex: 1;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.input-group input:focus {
+    border-color: #1ecfff;
+    box-shadow: 0 0 6px #00bfff;
+}
+
+.input-group button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #17C2EC;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    background: #0099cc;
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: flex;
@@ -342,6 +472,14 @@ section {
     .block-get-vaccine {
         width: 500px;
     }
+
+    .submit-button{
+        width: 100px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
@@ -389,5 +527,17 @@ section {
     .employees-flex img {
         width: 40px;
         height: 40px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .header-wrapper {
+        display: none;
+    }
+
+    .form-block {
+        display: none;
     }
 }
