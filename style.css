@@ -89,7 +89,7 @@ nav label {
     color: rgba(128, 128, 128, 0.8);
 }
 
-.margin-15{
+.margin-15 {
     margin-bottom: 15px;
 }
 
@@ -190,7 +190,7 @@ section {
     gap: 20px;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
     gap: 5px;
