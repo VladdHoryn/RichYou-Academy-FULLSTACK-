@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-main{
+main {
     background-image: url("./images/background.png");
     background-size: cover;
     background-position: center top;
@@ -130,7 +130,7 @@ section {
     margin: 0 35px 0 35px;
 }
 
-.block-get-vaccine{
+.block-get-vaccine {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -138,28 +138,32 @@ section {
     padding: 0;
 }
 
-.block-get-vaccine p{
+.block-get-vaccine p {
     margin: 0;
     padding: 0;
 }
 
-.fs-medium{
+.fs-medium {
     font-size: 24px;
 }
-.fs-big{
+
+.fs-big {
     font-size: 48px;
 }
 
 .c-blue {
     color: #17C2EC;
 }
-.c-white{
+
+.c-white {
     color: white;
 }
+
 .bold {
     font-weight: 700;
 }
-.extra-bold{
+
+.extra-bold {
     font-weight: 900;
 }
 
@@ -188,7 +192,7 @@ section {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 
-#button-help{
+#button-help {
     padding: 20px 25px;
     border-radius: 20px;
     border: 2px solid #17C2EC;
@@ -259,34 +263,35 @@ section {
     z-index: 3;
     transform: translateY(-50%);
 }
- .employees-flex{
-     display: flex;
-     align-items: center;
-     gap: 0;
- }
 
- .employees-flex img {
-     width: 60px;
-     height: 60px;
- }
+.employees-flex {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
 
- .specialists{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     gap: 5px;
- }
+.employees-flex img {
+    width: 60px;
+    height: 60px;
+}
 
- .specialists p{
-     margin: 0;
- }
+.specialists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
 
- .block-vaccine{
-     display: flex;
-     align-items: flex-start;
-     justify-content: center;
-     flex-wrap: wrap;
- }
+.specialists p {
+    margin: 0;
+}
+
+.block-vaccine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 768px) {
     .menu-button {
@@ -316,10 +321,11 @@ section {
         display: none;
     }
 
-    .fs-medium{
+    .fs-medium {
         font-size: 20px;
     }
-    .fs-big{
+
+    .fs-big {
         font-size: 36px;
     }
 
@@ -328,20 +334,31 @@ section {
         height: 30px;
     }
 
-    .block-get-vaccine{
+    .block-vaccine {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block-get-vaccine {
         width: 500px;
     }
 }
 
 @media (max-width: 480px) {
-    .fs-medium{
+    .fs-medium {
         font-size: 14px;
     }
-    .fs-big{
+
+    .fs-big {
         font-size: 24px;
     }
 
-    .block-get-vaccine{
+    .block-vaccine {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block-get-vaccine {
         width: 300px;
     }
 
@@ -354,17 +371,17 @@ section {
         height: 270px;
     }
 
-    .left-img{
+    .left-img {
         width: 50px;
         height: 50px;
     }
 
-    .right-img{
+    .right-img {
         width: 50px;
         height: 50px;
     }
 
-    .bottom-block-img{
+    .bottom-block-img {
         width: 240px;
         height: 70px;
     }
