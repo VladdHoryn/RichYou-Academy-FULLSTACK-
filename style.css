@@ -178,6 +178,90 @@ section {
     border: 2px solid #17C2EC;
 }
 
+.image-container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas:
+        "left main right"
+        ". bottom .";
+    align-items: center;
+    justify-items: center;
+    grid-auto-columns: minmax(50px, auto);
+    position: relative;
+    gap: 0;
+}
+
+.main-img {
+    grid-area: main;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+}
+
+.left-img {
+    display: block;
+    grid-area: left;
+    justify-self: end;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.right-img {
+    display: block;
+    grid-area: right;
+    justify-self: start;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.bottom-block-img {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 374px;
+    height: 100px;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 20px;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+ .employees-flex{
+     display: flex;
+     align-items: center;
+     gap: 0;
+ }
+
+ .employees-flex img {
+     width: 60px;
+     height: 60px;
+ }
+
+ .specialists{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 5px;
+ }
+
+ .specialists p{
+     margin: 0;
+ }
+
+ .block-vaccine{
+     display: flex;
+     align-items: flex-start;
+     flex-wrap: wrap;
+ }
+
 @media (max-width: 768px) {
     .menu-btn {
         display: flex;
