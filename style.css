@@ -507,6 +507,138 @@ section {
     text-decoration: none;
 }
 
+.registration {
+    margin: 0;
+    padding: 50px 35px 50px 35px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.registration-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 600px;
+}
+
+.registration-form label {
+    display: block;
+    margin: 15px 0 8px;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #e6e6e6;
+}
+
+.phone-input {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    background: #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.phone-input .flag {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-input .flag img {
+    width: 40px;
+    height: auto;
+}
+
+.phone-input input {
+    border: none;
+    flex: 1;
+    background: transparent;
+    padding: 14px;
+}
+
+.verify-btn {
+    flex: 1;
+    background: #17C2EC;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.verify-btn:hover {
+    background: #0099cc;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: #00bfff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.submit-btn:hover {
+    background: #0099cc;
+}
+
+.already {
+    text-align: center;
+}
+
+.already a {
+    text-decoration: none;
+}
+
+.already a:hover {
+    text-decoration: underline;
+}
+
+.registration-card {
+    position: relative;
+    width: 380px;
+    background: #0a1b47;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.registration-card .virus {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.registration-card .vaccine {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.status-btn {
+    background: rgba(128, 128, 128, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.status-btn:hover {
+    background: rgba(256, 256, 256, 0.8);
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: flex;
