@@ -151,6 +151,7 @@ section {
 .fs-small {
     font-size: 20px;
 }
+
 .fs-medium {
     font-size: 24px;
 }
@@ -512,6 +513,7 @@ section {
     padding: 50px 35px 50px 35px;
     background-color: white;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
@@ -639,6 +641,11 @@ section {
     background: rgba(256, 256, 256, 0.8);
 }
 
+.back-up-p-768 {
+    display: none;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: flex;
@@ -689,7 +696,7 @@ section {
         width: 500px;
     }
 
-    .submit-button{
+    .submit-button {
         width: 100px;
     }
 
@@ -697,8 +704,45 @@ section {
         flex-direction: column;
     }
 
-    .vaccination-header{
+    .vaccination-header {
         flex-direction: column;
+    }
+
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .registration-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .registration-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .verify-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .back-up-p-768 {
+        display: block;
+    }
+
+    .back-up-main-p-1440 {
+        display: none;
     }
 }
 
@@ -706,6 +750,7 @@ section {
     .fs-small {
         font-size: 14px;
     }
+
     .fs-medium {
         font-size: 14px;
     }
@@ -790,5 +835,12 @@ section {
     .card .icon img {
         height: 50px;
         width: 50px;
+    }
+
+    .registration-card .virus {
+        width: 70px;
+        height: 70px;
+        top: -35px;
+        left: -35px;
     }
 }
