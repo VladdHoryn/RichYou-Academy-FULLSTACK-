@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -143,6 +148,9 @@ section {
     padding: 0;
 }
 
+.fs-small {
+    font-size: 20px;
+}
 .fs-medium {
     font-size: 24px;
 }
@@ -423,6 +431,82 @@ section {
     background: #0099cc;
 }
 
+.vaccination {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.vaccination-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: start;
+}
+
+.vaccination-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.card-big {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    background: #1a2555;
+    border-radius: 25px 100px 25px 25px;
+    min-width: 370px;
+    width: 370px;
+    height: 420px;
+    padding: 40px;
+}
+
+.card-big .icon img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-big .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.right-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 25px;
+    padding: 30px;
+    width: 240px;
+    height: 240px;
+}
+
+.card .icon img {
+    height: 70px;
+    width: 70px;
+}
+
+.card .read-more {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: flex;
@@ -480,9 +564,16 @@ section {
     .input-group {
         flex-direction: column;
     }
+
+    .vaccination-header{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
+    .fs-small {
+        font-size: 14px;
+    }
     .fs-medium {
         font-size: 14px;
     }
@@ -539,5 +630,33 @@ section {
 
     .form-block {
         display: none;
+    }
+
+    .vaccination-cards {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-big {
+        padding: 20px;
+        min-width: 240px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .card-big .icon img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card {
+        padding: 15px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .card .icon img {
+        height: 50px;
+        width: 50px;
     }
 }
