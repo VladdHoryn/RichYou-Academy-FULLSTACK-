@@ -5,6 +5,7 @@
 }
 
 h1 {
+    font-size: 36px;
     font-weight: bold;
     margin: 40px 0;
 }
@@ -27,6 +28,8 @@ main {
 
 .column-header {
     color: #D1A28B;
+    font-size: 12px;
+    font-weight: bold;
 
 }
 
@@ -36,6 +39,7 @@ main {
     padding: 16px;
     background-color: #F3EFEE;
     border-radius: 12px;
+    font-size: 17px;
 }
 
 .checked {
@@ -85,6 +89,7 @@ input[type="checkbox"]:checked::after {
     border: none;
     color: #222222;
     outline: none;
+    font-size: 18px;
 }
 
 .bottom-input input:focus{
@@ -96,6 +101,7 @@ input[type="checkbox"]:checked::after {
     background-color: #393433;
     color: #F9F5F4;
     border-radius: 12px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
 }
