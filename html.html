@@ -39,7 +39,29 @@
 </div>
 
 <main id="app" class="content hidden">
-    <section id="todo" class="section active"><h2>ToDo</h2>
+    <section id="todo" class="section active">
+        <div class="todo-container">
+            <h1>Today</h1>
+
+            <div class="columns">
+                <ul class="column" id="design">
+                    <p class="column-header">DESIGN</p>
+                </ul>
+
+                <ul class="column" id="personal">
+                    <p class="column-header">PERSONAL</p>
+                </ul>
+
+                <ul class="column" id="house">
+                    <p class="column-header">HOUSE</p>
+                </ul>
+            </div>
+
+            <div class="bottom-input">
+                <input type="text" placeholder="Write a task..." id="new-title">
+                <button id="add-item">Add</button>
+            </div>
+        </div>
     </section>
     <section id="analytics" class="section"><h2>Analytics</h2>
     </section>
@@ -53,5 +75,6 @@
 
 <script src="auth.js" type="module"></script>
 <script src="main.js" type="module"></script>
+<script src="todo.js" type="module"></script>
 </body>
 </html>

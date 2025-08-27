@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('active');
             document.getElementById(item.dataset.section).classList.add('active');
 
-            // Закриваємо меню при натисканні на мобільних пристроях
             if (window.innerWidth <= 768) {
                 sidebar.classList.remove('active');
                 overlay.classList.add('hidden');
