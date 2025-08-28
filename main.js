@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('overlay');
 
-    // Ініціалізація авторизації
     if (checkAuth()) {
         hideAuthForm();
         authBtn.innerText = 'Logout';
